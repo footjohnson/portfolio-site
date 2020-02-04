@@ -34,7 +34,7 @@ export default {
 
 <style lang="scss" scoped>
 	nav{
-		z-index: 1;
+		z-index: 5;
 		display: grid;
 		grid-template: auto 1fr 40px / 280px;
 		align-items: center;
