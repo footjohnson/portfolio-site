@@ -56,7 +56,7 @@ export default {
 			height: 100%;
 		}
 		section{
-			min-height: 330px;
+			min-height: 320px;
 			&.website-cards{
 				border-right: 2px $green1 solid;
 			}

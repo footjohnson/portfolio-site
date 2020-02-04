@@ -64,7 +64,7 @@ export default {
 			// });
 
 			initTl.set(welcome, {
-				y: -300
+				y: -150
 			})
 			.set(toTxt, {
 				x: -500
@@ -73,7 +73,7 @@ export default {
 				x: 500
 			})
 			.set(website, {
-				y: 300
+				y: 150
 			});
 
 			// Animation Durations in seconds
@@ -101,23 +101,13 @@ export default {
 					opacity: 0,
 					display: 'none'
 				})
+
 				// Welcome animation
-				.to(welcome, {
+				.to([welcome, toTxt, myTxt, website], {
 					duration: welcomeDuration,
-					y: 0
-				}, '-=' + disappearDuration)
-				.to(toTxt, {
-					duration: welcomeDuration,
-					x: welcomeDuration
-				}, negRelWelDuration)
-				.to(myTxt, {
-					duration: welcomeDuration,
+					y: 0,
 					x: 0
-				}, negRelWelDuration)
-				.to(website, {
-					duration: welcomeDuration,
-					y: 0
-				}, negRelWelDuration)
+				}, '-=' + disappearDuration)
 			);
 		},
 		async welcomeAnimation(){
