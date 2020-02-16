@@ -553,6 +553,7 @@ export default {
 	}
 
     .about-header{
+		top: 0;
         position: absolute;
         width: 100%;
         text-align: center;
