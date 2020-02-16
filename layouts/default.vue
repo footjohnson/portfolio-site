@@ -65,13 +65,15 @@ h1, h2, h3, label{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
-	// min-height: 100vh;
+	min-height: 100vh;
 	// height: 100vh;
 	width: 100vw;
+	min-height: 560px;
+	height: 100vh;
 	display: grid;
 	grid-template: auto / min-content auto;
-	overflow-x: hidden;
 	.main-cont{
+		overflow-y: scroll;
 		display: grid;
 		grid-template: $header-height auto / 1fr;
 		background-color: #3f0058;
@@ -134,11 +136,12 @@ a:not(.name-cont){
 @media screen and (max-width: $med-break){
 	.container{
 		grid-template: auto min-content / 1fr;
+		min-height: 0;
 		height: 100vh;
 		.main-cont, .about-cont{
 			grid-row: 1 / 2;
 			min-height: 100%;
-			overflow-y: scroll;
+			// overflow-y: scroll;
 		}
 	}
 }

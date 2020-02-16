@@ -19,7 +19,7 @@
 			</li>
 			<!-- <li class="nav-divider">*</li> -->
 			<li>
-				<nuxt-link to="/contact-info">Contact Info</nuxt-link>
+				<nuxt-link to="/contact-info">Contact</nuxt-link>
 			</li>
 		</ul>
 		<small class="copyright">© Jace Medlin 2020</small>

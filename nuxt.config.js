@@ -14,7 +14,12 @@ export default {
 		link: [
 		{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
 		{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900|Amaranth|Vidaloka|Spirax&display=swap' }
-		//   <link href="https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:900|Macondo+Swash+Caps|Metamorphous|Mystery+Quest|Spirax&display=swap" rel="stylesheet">
+		],
+		script: [
+		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js' },
+		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js' },
+		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js' },
+		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js' }
 		]
 	},
 	/*
@@ -35,7 +40,11 @@ export default {
 	** Plugins to load before mounting the App
 	*/
 	plugins: [
-		{src: '~/plugins/testt.js', mode: 'client'}
+		// {src: '~/plugins/testt.js', mode: 'client'},
+		// {
+		// 	src: '~plugins/vue-scrollmagic.js',
+		// 	ssr: false
+		// }
 	],
 	/*
 	** Nuxt.js dev-modules
@@ -71,6 +80,7 @@ export default {
 		** You can extend webpack config here
 		*/
 		extend (config, ctx) {
-		}
+		},
+		// vendor: ['ScrollMagic']
 	}
 }
