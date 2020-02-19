@@ -1,10 +1,16 @@
 <template>
 	<div class="space">
+		<div class="bg-stars tiny-stars"></div>
+		<div class="bg-stars small-stars"></div>
+		<div class="bg-stars yellow-stars"></div>
+		<div class="bg-stars blue-stars"></div>
+		<div class="bg-stars red-stars"></div>
         <div class="about-header">
 			<h2>
 				Click the planets to learn more about me.
 			</h2>
 		</div>
+
 		<div class="planetary-system">
 			<svg class="star" id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.19257 98.19263">
 				<defs>
@@ -194,13 +200,14 @@
 						I attend local tech meetups and participate in coding contests and hackathons.
 						Every year I compete at Hack4Good - a Springfield, MO weekend-long hackathon
 						where teams and individuals get together and build an app for a local business
-						(generally a nonprofit). In 2017 my team won second place. In 2018 I lead my own team.
+						(generally a nonprofit). In 2017 my team won second place. In 2018 I led my own team.
 						In 2019 I competed by myself - here's a <a href="https://youtu.be/NGzK7CzOxqQ?t=1295">link</a> to my presentation for that year.
 					</p>
 					<p>
 						I'm also a huge AI nut and would love to break into the field.
 						I'm currently saving up money so I can go back to school to study machine consciousness.
-						Only when I have amassed my own army of robots and dominated this pathetic planet will my lust for power be satisfied.
+						Only when I have amassed my robot army and dominated this puny planet you call "Earth" 
+						will my lust for power finally be quenched.
 					</p>
 				</div>
 				<p>
@@ -314,19 +321,23 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1.6,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: .4,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).repeat(-1);
 		},
@@ -382,19 +393,23 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: .4,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1.6,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).repeat(-1);
 		},
@@ -456,7 +471,8 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration * 2,
-				width: '-=8vw',
+				// width: '-=8vw',
+				scale: .2,
 				yoyo: true,
 				ease: 'power1.inOut',
 				repeat: -1
@@ -505,10 +521,10 @@ export default {
 						this.currentPlanet.to(event.currentTarget, {
 							duration: .8,
 							width: '300vw',
+							scale: 1,
 							ease: 'power3.inOut',
 						}).to(this.currentPage, {
 							duration: .4,
-							// height: 425
 							height: '100%'
 						}, 0.4).set('.planet-pages', {
 							display: 'block'
@@ -545,6 +561,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	$max-screen-width: 2000;
+	$max-screen-height: 2000;
+
+	@function generateStars($n, $color:'#fff'){ 
+		// Using box-shadows to generate stars - not very performant, but damn it looks good.
+		$stars: '#{random($max-screen-width)}px #{random($max-screen-height)}px #{$color}';
+		@for $i from 1 to $n {
+			$stars: '#{$stars}, #{random($max-screen-width)}px #{random($max-screen-height)}px #{$color}';
+		}
+		@return unquote($stars);
+	}
+
+	$tiny-stars: generateStars(2000);
+	$small-stars: generateStars(1000);
+	$yellow-stars: generateStars(400, #ffff89);
+	$red-stars: generateStars(250, #ff7d7d);
+	$blue-stars: generateStars(150, #7e7eff);
 
 	pre{
 		white-space: pre-wrap;
@@ -569,6 +602,33 @@ export default {
 		width: 100%;
 		overflow: hidden;
 		// z-index: 3;
+		.bg-stars{
+			top: 0;
+			position: absolute;
+			height: 3px;
+			width: 3px;
+			background: transparent;
+			border-radius: 32px;
+			&.tiny-stars{
+				box-shadow: $tiny-stars;
+				height: 1px;
+				width: 1px;
+			}
+			&.small-stars{
+				box-shadow: $small-stars;
+				height: 2px;
+				width: 2px;
+			}
+			&.red-stars{
+				box-shadow: $red-stars;
+			}
+			&.yellow-stars{
+				box-shadow: $yellow-stars;
+			}
+			&.blue-stars{
+				box-shadow: $blue-stars;
+			}
+		}
 		.planetary-system{
             position: relative;
 			height: auto;

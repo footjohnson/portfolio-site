@@ -2,7 +2,7 @@
     <main>
         <section class="welcome-slide">
             <div ref="heyBox" class="hey-box greet-text">
-                <span class="hey">Yo, dawg</span>
+                <span class="hey">Hello</span>
                 <span class="exclamation-mark">!</span>
                 <span class="underline"></span>
             </div>
@@ -18,13 +18,6 @@
                 <span class="scroll-down-text">Scroll Down</span>
                 <div class="scroll-down-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.33 28">
-                        <defs>
-                            <style>
-                                path {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
                         <title>scroll-down-arrow</title>
                         <g>
                             <path
@@ -283,6 +276,9 @@ export default {
 					.scroll-down-arrow {
 						margin-top: 20px;
 						width: 40px;
+						path{
+							fill: #ffffff;
+						}
 					}
 				}
 			}
