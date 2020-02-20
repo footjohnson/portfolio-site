@@ -840,7 +840,8 @@ export default {
 			overflow-y: auto;
 			.close-page{
 				position: absolute;
-				right: 5px;
+				top: 15px;
+				right: 25px;
 				font-size: 36px;
 				color: $white;
 				cursor: pointer;
@@ -855,22 +856,33 @@ export default {
 				position: absolute;
 				height: 0;
 				overflow-y: hidden;
+				p{
+					font-size: 17px;
+					line-height: 1.1;
+					letter-spacing: 0.09px;
+				}
 				&.skills-and-titles{
+					position: relative;
 					display: flex;
 					flex-direction: column;
 					align-items: center;
-					width: 100%;
+					width: 80%;
+					max-width: 800px;
 					color: $white;
+					background: rgba(17, 5, 20, 0.7);
+					margin: 0 auto;
+					padding: 0 20px;
 					h2{
-						color: $black;
+						color: $green1;
 						// text-shadow:
-						border-bottom: 1px $purple1 solid;
+						border-bottom: 1px $fuchsia1 solid;
 						width: 100%;
 					}
 					div{
-						width: 80%;
+						width: 90%;
 						ul li{
 							margin: 10px 0;
+							
 						}
 						&.skills{
 							display: grid;
@@ -894,12 +906,15 @@ export default {
 					margin: 0 auto;
 					padding: 0 40px;
 					text-shadow: 0 0 2px $purple1;
-					background: rgba(37, 7, 46, .3);
+					background: rgba(17, 5, 20, 0.7);
 					h2{
 						margin: 40px 0 0;
 						color: $green1;
 					}
 					p{
+						font-size: 17px;
+						line-height: 1.1;
+						letter-spacing: 0.09px;
 						text-align: left;
 						margin: 10px 0 0;
 						color: $white;
