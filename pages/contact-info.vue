@@ -1,15 +1,16 @@
 <template>
 	<main>
-		<div class="module github-cont">
-			<h4>Github</h4>
-			<a href="https://github.com/footjohnson" target="_blank">https://github.com/footjohnson</a>
-		</div>
-		<div class="module linkedin-cont">
-			<h4>Linkedin</h4>
-			<a href="https://www.linkedin.com/in/jace-medlin/" target="_blank">https://www.linkedin.com/in/jace-medlin/</a>
+		<div class="module general-cont">
+			<div class="general-info">
+				<div><a class="gh-link" href="https://github.com/wumpus-and-the-milk-boys" target="_blank"><i class="fab fa-github"></i>wumpus-and-the-milk-boys</a></div>
+				<div><a class="li-link" href="https://www.linkedin.com/in/jace-medlin/" target="_blank"><i class="fab fa-linkedin-in"></i>/in/jace-medlin</a></div>
+				<div class="resume-link">
+					<a href="/Jace's-Resume.docx" target="_blank" >Click Here to Download My Resume</a>
+				</div>
+			</div>
 		</div>
 		<div class="module email-form-cont">
-			<h2>Say Hello!</h2>
+			<h2>Say Hello</h2>
 			<form action="">
 				<div class="name-cont">
 					<label for="name">Name</label>
@@ -48,7 +49,6 @@ export default {
 		grid-template: repeat(2, 1fr) 80px / repeat(2, 1fr);
 		justify-items: center;
 		.module{
-			height: 90%;
 			width: 80%;
 			background: $black;
 			border: 1px $green1 dashed;
@@ -62,15 +62,31 @@ export default {
 				font-size: 1em;
 			}
 		}
-		.github-cont{
+		.general-cont{
 			grid-column: 1 / 2;
-			grid-row: 1 / 2;
-			align-self: flex-start;
-		}
-		.linkedin-cont{
-			grid-column: 1 / 2;
-			grid-row: 2 / 3;
-			align-self: flex-end;
+			grid-row: 1 / 3;
+			align-self: center;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			padding: 10px 0;
+
+			.general-info{
+				display: grid;
+				grid-template: repeat(4, minmax(30px, 1fr)) / 1fr;
+				justify-content: center;
+				align-items: center;
+				width: 90%;
+				text-align: center;
+				[data-prefix=fab]{
+					margin-right: 5px;
+				}
+				.resume-link{
+					grid-row: 4 / 5;
+				}
+			}
 		}
 		.email-form-cont{
 			display: flex;
@@ -109,6 +125,22 @@ export default {
 					height: 30px;
 					margin: 0 auto;
 				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $lg-break){
+		main{
+			grid-template: repeat(2, auto) / 1fr;
+			.module{
+				margin: 0 0 60px;
+			}
+			.general-cont{
+				grid-row: 1 / 2;
+			}
+			.email-form-cont{
+				grid-column: 1 / 2;
+				grid-row: 2 / 3;
 			}
 		}
 	}
