@@ -13,18 +13,18 @@
 			<h2>Say Hello</h2>
 			<form action="POST" name="contact" netlify>
 				<div class="name-cont">
-					<label for="name">Name</label>
-					<input name="name" id="name" type="text" required>
+					<label for="user-name">Name</label>
+					<input name="user-name" id="name" type="text" required>
 				</div>
 
 				<div class="email-cont">
-					<label for="email">Email</label>
-					<input name="email" id="email" type="email" required>
+					<label for="user-email">Email</label>
+					<input name="user-email" id="email" type="email" required>
 				</div>
 
 				<div class="message-cont">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="5"
+					<label for="user-message">Message</label>
+					<textarea name="user-message" id="message" cols="30" rows="5"
 						required placeholder="Write your message here.">
 					</textarea>
 				</div>
