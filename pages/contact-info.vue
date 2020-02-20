@@ -11,7 +11,7 @@
 		</div>
 		<div class="module email-form-cont">
 			<h2>Say Hello</h2>
-			<form action="POST" name="contact" netlify>
+			<form method="POST" name="contact" netlify>
 				<div class="name-cont">
 					<label for="user-name">Name</label>
 					<input name="user-name" id="name" type="text" required>
