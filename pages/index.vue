@@ -2,7 +2,7 @@
     <main>
         <section class="welcome-slide">
             <div ref="heyBox" class="hey-box greet-text">
-                <span class="hey">Yo, dawg</span>
+                <span class="hey">Hello</span>
                 <span class="exclamation-mark">!</span>
                 <span class="underline"></span>
             </div>
@@ -18,13 +18,6 @@
                 <span class="scroll-down-text">Scroll Down</span>
                 <div class="scroll-down-arrow">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.33 28">
-                        <defs>
-                            <style>
-                                path {
-                                    fill: #fff;
-                                }
-                            </style>
-                        </defs>
                         <title>scroll-down-arrow</title>
                         <g>
                             <path
@@ -151,8 +144,7 @@ export default {
         async aboutAnimation(){
 			const atl = gsap.timeline({paused: true});
 			atl.to('main', {
-				background: AboutBGColor,
-				// duration: 2
+				background: AboutBGColor
 			})
 
 			const scrollScene = new ScrollScene({
@@ -169,7 +161,6 @@ export default {
 			const ctl = gsap.timeline({paused: true});
 			ctl.to('main', {
 				backgroundColor: "#3f0058"
-				// duration: 2
 			}).to('main', {
 				css:{
 					backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='100' height='50' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e8005c' fill-opacity='0.32'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
@@ -209,7 +200,6 @@ export default {
 		display: grid;
 		grid-template: repeat(2, auto) / 1fr;
         min-height: 100%;
-		// height: 1000px;
 		width: 100%;
 		z-index: 2;
 		section{
@@ -240,13 +230,11 @@ export default {
 						&.underline {
 							height: 100%;
 							width: 260px;
-							// background: $green1;
 							position: absolute;
 							left: calc(50% - 130px);
 							bottom: calc(50% - 50px);
 							border-bottom: 6px $black solid;
 							border-radius: 3px;
-							// z-index: 0;
 						}
 					}
 				}
@@ -258,7 +246,6 @@ export default {
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-					// background: $black;
 					color: $white;
 					span {
 						z-index: 2;
@@ -283,6 +270,9 @@ export default {
 					.scroll-down-arrow {
 						margin-top: 20px;
 						width: 40px;
+						path{
+							fill: #ffffff;
+						}
 					}
 				}
 			}

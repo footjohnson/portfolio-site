@@ -13,11 +13,9 @@
 			<li>
 				<nuxt-link to="/">About</nuxt-link>
 			</li>
-			<!-- <li class="nav-divider">*</li> -->
-			<li>
+			<!-- <li>
 				<nuxt-link to="/portfolio">Portfolio</nuxt-link>
-			</li>
-			<!-- <li class="nav-divider">*</li> -->
+			</li> -->
 			<li>
 				<nuxt-link to="/contact-info">Contact</nuxt-link>
 			</li>

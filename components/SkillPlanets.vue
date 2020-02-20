@@ -1,20 +1,20 @@
 <template>
 	<div class="space">
+		<div class="bg-stars tiny-stars"></div>
+		<div class="bg-stars small-stars"></div>
+		<div class="bg-stars yellow-stars"></div>
+		<div class="bg-stars blue-stars"></div>
+		<div class="bg-stars red-stars"></div>
         <div class="about-header">
 			<h2>
 				Click the planets to learn more about me.
 			</h2>
 		</div>
+
 		<div class="planetary-system">
-			<svg class="star" id="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98.19257 98.19263">
-				<defs>
-				</defs>
+			<svg class="star" id="sun" xmlns="http://www.w3.org/2000/svg" >
 				<title>Sun</title>
-				<g>
-					<path class="yellow1" d="M96.33905,35.74231A49.092,49.092,0,0,0,.05719,46.83209C.02307,47.58307,0,48.33691,0,49.09631A49.11385,49.11385,0,0,0,42.4696,97.73492,49.02914,49.02914,0,0,0,97.89819,54.43823a49.59784,49.59784,0,0,0,.29438-5.34192A49.09638,49.09638,0,0,0,96.33905,35.74231ZM59.50647,85.36188A41.22149,41.22149,0,1,1,88.24536,60.76715,41.31411,41.31411,0,0,1,59.50647,85.36188Z"/>
-					<path class="yellow2" d="M90.7323,38.53125A41.23137,41.23137,0,0,0,9.03894,40.962a41.69989,41.69989,0,0,0-.21985,4.27032A41.23181,41.23181,0,1,0,90.7323,38.53125ZM54.9151,61.37036c-.09705,0-.1925-.00616-.28931-.00732a23.999,23.999,0,0,1-23.71338-23.9953c0-.81208.04151-1.61444.1203-2.40576A24.00294,24.00294,0,1,1,54.9151,61.37036Z"/>
-					<path class="yellow3" d="M76.00342,25.89648A24.00591,24.00591,0,0,0,31.03271,34.962c-.07879.79132-.1203,1.59368-.1203,2.40576A23.999,23.999,0,0,0,54.62579,61.363c.09681.00116.19226.00732.28931.00732A24.00892,24.00892,0,0,0,76.00342,25.89648Z"/>
-				</g>
+				<circle class="yellow1" cx='50%' cy='50%' r='50%'></circle>
 			</svg>
 			<svg class="planet" id="red-planet-green-ring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 174.636 104.53909">
 				<defs>
@@ -129,7 +129,7 @@
 			</svg>
 		</div>
 		<div class="planet-pages">
-			<div class="close-page">X</div>
+			<div class="close-page"><i class="fas fa-times"></i></div>
 			<section class="skills-and-titles">
 				<div class="skills">
 					<h2>Skills</h2>
@@ -163,8 +163,68 @@
 			</section>
 			<section class="about-me">
 				<h2>About Me</h2>
-				<p>Dear Mr. Vernon, we accept the fact that we had to sacrifice a whole saturday in detention for whatever it is we did wrong, but we think you're crazy for making us write an essay telling you who we think we are. You see us as you want to see us, in the simplest terms, in the most convenient definitions.</p>
-				<p>But what we found out, is that each one of us is a brain, and an athlete, and a basketcase, a princess, and a criminal. Does that answer your question? Sincerely yours, The Breakfast Club.</p>
+				<p>
+					My name is Jace Medlin, and I'm a software architect.
+					<small style="display: inline-block; font-size: 10px">(Hi, Jace)</small>
+				</p>
+				<p>
+					If you take a trip to the other planets, 
+					you can find out more about what I do, what I've done, and what I'm good at.
+				</p>
+				<p>
+					If you want to learn a little bit about myself as a person and how I got to be
+					where I am today, well... this is the planet for you. 
+				</p>
+				<br>
+				<p>
+					I was born in a shack down in Mississippi to two poor farmers by the names of
+					"Marcus" and "Joannabelle." My four olders sisters and six younger brothers were all very
+					eager to meet their new sibling, but they weren't prepared for the stubbornness and determination
+					that would follow me. Mama always said I shot out like a cannon, ready t' take on the world. <br>
+					<br>
+					"You shot out like a cannon, ready t' take on the world," she used to say. <br>
+					<br>
+					Growing up in rural, Southern poverty, we never had the money for food. We had to learn to live off the land,
+					and since our farm was often plagued with droughts and pests, daddy used to have to take the fourteen of us hunting.
+					Because we only had one gun, we all had to take turns shooting at the game. Early on, we'd lose out many times
+					due to the fact that we couldn't find any prey, or we'd get so caught up in the jumbled mess of passing the gun back and forth
+					that the animal we were shooting at would get away. This meant we'd have to resort to scraping roadkill off the road,
+					and that would be the only food our family would get to eat for the next 6-7 days. <br>
+					<br>
+					Well, as you might've guessed, roadkill sucks. 
+					It's tough, bland, and there's usually not much of it. When I turned about 3, I flat-out refused to eat it. 
+					Instead, while everyone else was eating, I'd take the rest of the bullets we were rationed for that day, 
+					and I'd go practice shooting in our 16-acre backyard. Soon I started making every shot when it was my turn,
+					and eating roadkill became a thing we all looked back on and laughed at. I was an even better shot than my three sisters.
+					I was so good, in fact, that I won the golden bullet in the annual Mississippi state-wide Shoot-o-Rama-thon 14 years in a row.
+					After those fourteen years, I realized shooting wasn't fun to me any longer, and, despite my ma and pa's persistence,
+					I stopped going. Mama always said I was the most ornery of the bunch. <br>
+					<br>
+					"You always was the most ornery of the bunch," she used to say. <br>
+					<br>
+					I got bored, because I found my true love when I was around six: software engineering.
+					It all stemmed from the first day I could ever recall meeting
+					my Uncle Clembo. He and Pa were joking around about the days when they were kids, 
+					and Uncle Clembo got out his old IBM-PC and typed up this short little adventure game in Fortran 77.
+					I can still remember it today: "Dungeon Quest." When I saw that game, it immediately struck me. 
+					Not long after, I asked Uncle Clembo if he would teach me to code too, and, after a little hesitation,
+					he finally agreed. It took me a long four days, but by the end, I had written my own operating system in my very
+					own programming language. <br>
+					<br>
+					Around the age of nine, I started my first business - a little web development firm that grew from just me to
+					over 16,000 employees in the first year. After doing that for a few years, I started my next business. Then another.
+					Pretty soon, I was starting successful businesses every week, and selling them for huge profits. 
+					I was so successful, in fact, that I was on the front page of Mississippi's Building Us Tomorrow's Technology (BUTT)
+					magazine. <br>
+					<br> 
+					But one day, I realized I was sick of starting businesses. I wanted to go back to my roots and start building
+					software again. As you might've guessed, Uncle Clembo was proud. The rest of my family, however, didn't understand.
+					They never did, I suppose. Mama always said I ain't never had much sense. <br>
+					<br>
+					"You ain't never had much sense," she used to say. <br>
+					<br>
+					Maybe mama was right all along. But that never stopped me.
+				</p>
 			</section>
 			<section class="projects-and-interests">
 				<div class="projects">
@@ -194,19 +254,19 @@
 						I attend local tech meetups and participate in coding contests and hackathons.
 						Every year I compete at Hack4Good - a Springfield, MO weekend-long hackathon
 						where teams and individuals get together and build an app for a local business
-						(generally a nonprofit). In 2017 my team won second place. In 2018 I lead my own team.
+						(generally a nonprofit). In 2017 my team won second place. In 2018 I led my own team.
 						In 2019 I competed by myself - here's a <a href="https://youtu.be/NGzK7CzOxqQ?t=1295">link</a> to my presentation for that year.
 					</p>
 					<p>
-						I'm also a huge AI nut and would love to break into the field.
-						I'm currently saving up money so I can go back to school to study machine consciousness.
-						Only when I have amassed my own army of robots and dominated this pathetic planet will my lust for power be satisfied.
+						I'm also a huge AI nut majorly curious about machine consciousness.
+						Only when I have amassed my robot army and dominated this puny planet you call "Earth" 
+						will my lust for power finally be quenched.
 					</p>
 				</div>
-				<p>
+				<!-- <p>
 					Learn more about my work history, past projects, and interests by visiting my
 					<nuxt-link to="/portfolio">portfolio</nuxt-link> and downloading my resume.
-				</p>
+				</p> -->
 			</section>
 		</div>
 	</div>
@@ -314,19 +374,23 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1.6,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: .4,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).repeat(-1);
 		},
@@ -382,19 +446,23 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: .4,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '+=4vw',
+				// width: '+=4vw',
+				scale: 1.6,
 				ease: 'power1.out'
 			}).to(planet, {
 				duration: this.planetPathDuration,
-				width: '-=4vw',
+				// width: '-=4vw',
+				scale: 1,
 				ease: 'power1.in'
 			}).repeat(-1);
 		},
@@ -456,7 +524,8 @@ export default {
 			// Z (width/size) animation
 			ztl.to(planet, {
 				duration: this.planetPathDuration * 2,
-				width: '-=8vw',
+				// width: '-=8vw',
+				scale: .2,
 				yoyo: true,
 				ease: 'power1.inOut',
 				repeat: -1
@@ -467,6 +536,24 @@ export default {
 			this.RedGreenPlanetPath();
 			this.BlackWhitePlanetPath();
 			this.BigGreenPlanetPath();
+		},
+
+		StartSun(){
+			const tl = gsap.timeline();
+
+			tl.to('#sun circle', {
+				duration: 6,
+				fill: '#fff', // White
+				yoyo: true,
+				ease: 'power1.inOut',
+				repeat: -1
+			}).to('#sun', {
+				duration: 3,
+				scale: 1.1,
+				yoyo: true,
+				ease: 'power1.inOut',
+				repeat: -1
+			}, 0);
 		},
 
 		EnablePlanetClickability(){
@@ -505,10 +592,10 @@ export default {
 						this.currentPlanet.to(event.currentTarget, {
 							duration: .8,
 							width: '300vw',
+							scale: 1,
 							ease: 'power3.inOut',
 						}).to(this.currentPage, {
 							duration: .4,
-							// height: 425
 							height: '100%'
 						}, 0.4).set('.planet-pages', {
 							display: 'block'
@@ -535,6 +622,7 @@ export default {
 	},
     mounted: function(){
 		this.ResetTimelines();
+		this.StartSun();
 		this.StartPlanetPaths();
 		this.EnablePlanetClickability();
 		document.getElementsByClassName('close-page')[0].addEventListener('click', (event)=>{
@@ -545,6 +633,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+	$max-screen-width: 2000;
+	$max-screen-height: 2000;
+
+	@function generateStars($n, $color:'#fff'){ 
+		// Using box-shadows to generate stars - not very performant, but damn it looks good.
+		$stars: '#{random($max-screen-width)}px #{random($max-screen-height)}px #{$color}';
+		@for $i from 1 to $n {
+			$stars: '#{$stars}, #{random($max-screen-width)}px #{random($max-screen-height)}px #{$color}';
+		}
+		@return unquote($stars);
+	}
+
+	$tiny-stars: generateStars(2000);
+	$small-stars: generateStars(1000);
+	$yellow-stars: generateStars(400, #ffff89);
+	$red-stars: generateStars(250, #ff7d7d);
+	$blue-stars: generateStars(150, #7e7eff);
 
 	pre{
 		white-space: pre-wrap;
@@ -569,6 +674,33 @@ export default {
 		width: 100%;
 		overflow: hidden;
 		// z-index: 3;
+		.bg-stars{
+			top: 0;
+			position: absolute;
+			height: 3px;
+			width: 3px;
+			background: transparent;
+			border-radius: 32px;
+			&.tiny-stars{
+				box-shadow: $tiny-stars;
+				height: 1px;
+				width: 1px;
+			}
+			&.small-stars{
+				box-shadow: $small-stars;
+				height: 2px;
+				width: 2px;
+			}
+			&.red-stars{
+				box-shadow: $red-stars;
+			}
+			&.yellow-stars{
+				box-shadow: $yellow-stars;
+			}
+			&.blue-stars{
+				box-shadow: $blue-stars;
+			}
+		}
 		.planetary-system{
             position: relative;
 			height: auto;
@@ -586,17 +718,11 @@ export default {
             }
 			#sun{
 				position: relative;
-                // left: 35%;
 				width: 20vw;
+				height: 20vw;
 				z-index: 5;
 				.yellow1 {
-					fill: #ffd817;
-				}
-				.yellow2 {
-					fill: #ffe874;
-				}
-				.yellow3 {
-					fill: #fff7d1;
+					fill: #ffcd2a;
 				}
 			}
 			#red-planet-green-ring{
@@ -631,7 +757,7 @@ export default {
 				}
 
 				.cls-7 {
-					fill: #04ff03;
+					fill: #00845b;
 				}
 
 				.cls-8 {
@@ -639,7 +765,7 @@ export default {
 				}
 
 				.cls-9 {
-					fill: #03bf02;
+					fill: #004231;
 				}
 			}
 			#black-white-planet{
@@ -714,8 +840,16 @@ export default {
 			overflow-y: auto;
 			.close-page{
 				position: absolute;
-				right: 0;
+				right: 5px;
+				font-size: 36px;
+				color: $white;
+				cursor: pointer;
 				z-index: 12;
+				transition: all .5s ease;
+				&:hover{
+					color: $purple1;
+					transition: all .5s ease;
+				}
 			}
 			> section{
 				position: absolute;
@@ -750,19 +884,28 @@ export default {
 					}
 				}
 				&.about-me{
-					overflow: hidden;
+					overflow: auto;
 					display: flex;
 					flex-direction: column;
 					position: relative;
 					grid-template: minmax(1px, 40px) / auto;
-					width: 80%;
-					max-width: 600px;
+					width: 90%;
+					max-width: 800px;
 					margin: 0 auto;
+					padding: 0 40px;
+					text-shadow: 0 0 2px $purple1;
+					background: rgba(37, 7, 46, .3);
 					h2{
-						margin: 20px 0 0;
+						margin: 40px 0 0;
+						color: $green1;
 					}
 					p{
+						text-align: left;
 						margin: 10px 0 0;
+						color: $white;
+						&:last-child{
+							padding-bottom: 40px;
+						}
 					}
 				}
 				&.projects-and-interests{
