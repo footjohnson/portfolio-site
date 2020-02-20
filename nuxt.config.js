@@ -20,7 +20,7 @@ export default {
 		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js' },
 		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js' },
 		// { src: 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js' },
-			{ src: 'https://kit.fontawesome.com/b6bacb61e0.js', crossorigin: 'anonymous' }
+			{ src: 'https://kit.fontawesome.com/b6bacb61e0.js', crossorigin: 'anonymous', SameSite: "none" }
 		]
 	},
 	/*
