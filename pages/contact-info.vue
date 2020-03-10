@@ -2,7 +2,7 @@
 	<main>
 		<div class="module general-cont">
 			<div class="general-info">
-				<div><a class="gh-link" href="https://github.com/wumpus-and-the-milk-boys" target="_blank"><i class="fab fa-github"></i>wumpus-and-the-milk-boys</a></div>
+				<div><a class="gh-link" href="https://github.com/based-jace" target="_blank"><i class="fab fa-github"></i>based-jace</a></div>
 				<div><a class="li-link" href="https://www.linkedin.com/in/jace-medlin/" target="_blank"><i class="fab fa-linkedin-in"></i>/in/jace-medlin</a></div>
 				<div class="resume-link">
 					<a href="/Jace's-Resume.docx" target="_blank" >Click Here to Download My Resume</a>
