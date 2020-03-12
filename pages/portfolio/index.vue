@@ -1,15 +1,26 @@
 <template>
 	<main>
-		<h2 class="section-header websites-header">Websites</h2>
-		<h2 class="section-header graphics header">Vector Graphics and Animations</h2>
+		<h1 class="section-header websites-header">Websites and Web Applications</h1>
+		<!-- <h2 class="section-header graphics header">Vector Graphics and Animations</h2> -->
 		<section class="website-cards">
-			Websites
+			<div class="card">
+				<div class="img-cont">
+					<a href="https://memento.jacemedlin.xyz" target="_blank" >
+						<img src="/portfolio-examples/memento.png" alt="Demo Image of memento">
+					</a>
+				</div>
+				<div class="card-description">
+					<h5><a href="https://memento.jacemedlin.xyz" target="_blank">memento</a></h5>
+					<p>
+						File storage and management web app built with Vue, Flask, and GCP. <br>
+						Contact me for demo credentials.
+					</p>
+				</div>
+			</div>
 		</section>
-		<section class="graphics-cards">
+		<!-- <section class="graphics-cards">
 			Graphics
-		</section>
-		<h3 class="websites-link"><nuxt-link to="portfolio/websites">See more websites</nuxt-link></h3>
-		<h3 class="graphics-link"><nuxt-link to="portfolio/graphics">See more graphics and animations</nuxt-link></h3>
+		</section> -->
 	</main>
 </template>
 
@@ -47,7 +58,11 @@ export default {
 <style lang="scss" scoped>
 	main{
 		display: grid;
-		grid-template: 60px 1fr 80px / repeat(2, 1fr);
+		$header-ht: 60px;
+		$bottom-ht: 80px;
+		$body-ht: 100vh - calc(#{$header-ht} + #{$bottom-ht});
+
+		grid-template: #{$header-ht} #{$body-ht} #{$bottom-ht} / 1fr;
 		.section-header{
 			display: flex;
 			align-items: center;
@@ -58,7 +73,47 @@ export default {
 		section{
 			min-height: 320px;
 			&.website-cards{
-				border-right: 2px $green1 solid;
+				.card{
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+					height: 220px;
+					width: 200px;
+					background: $black;
+					border: 1px $green1 dashed;
+					border-radius: 4px;
+					.img-cont{
+						position: absolute;
+						top: 0;
+						width: 100%;
+						img{
+							height: 100%;
+							width: 100%;
+						}
+					}
+					.card-description{
+						height: 44px;
+						padding: 16px 0;
+						z-index: 2;
+						background: $black;
+						overflow: hidden;
+						transition: .5s ease-in-out;
+						&:hover{
+							height: 100%;
+						}
+						h5{
+							font-size: 1em;
+							margin-top: -3px;
+							margin-bottom: 12px;
+						}
+						p{
+							margin: 0 10px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+						}
+					}
+				}
 			}
 		}
 	}

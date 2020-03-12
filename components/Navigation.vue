@@ -13,14 +13,14 @@
 			<li>
 				<nuxt-link to="/">About</nuxt-link>
 			</li>
-			<!-- <li>
+			<li>
 				<nuxt-link to="/portfolio">Portfolio</nuxt-link>
-			</li> -->
+			</li>
 			<li>
 				<nuxt-link to="/contact-info">Contact</nuxt-link>
 			</li>
 		</ul>
-		<small class="copyright">© Jace Medlin 2020</small>
+		<small class="copyright">© 2020 Jace Medlin</small>
 	</nav>
 </template>
 

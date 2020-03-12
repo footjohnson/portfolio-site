@@ -155,8 +155,12 @@
 				<div class="job-titles">
 					<h2>Job Titles</h2>
 					<ul>
+						<li>Software Engineer</li>
 						<li>Software Architect</li>
+						<li>Software Developer</li>
 						<li>Full-Stack Engineer</li>
+						<li>Full-Stack Developer</li>
+						<li>Front-End Engineer</li>
 						<li>Front-End Developer</li>
 					</ul>
 				</div>
@@ -168,12 +172,12 @@
 					<small style="display: inline-block; font-size: 10px">(Hi, Jace)</small>
 				</p>
 				<p>
-					If you take a trip to the other planets, 
+					If you take a trip to the other planets,
 					you can find out more about what I do, what I've done, and what I'm good at.
 				</p>
 				<p>
 					If you want to learn a little bit about myself as a person and how I got to be
-					where I am today, well... this is the planet for you. 
+					where I am today, well... this is the planet for you.
 				</p>
 				<br>
 				<p>
@@ -191,9 +195,9 @@
 					that the animal we were shooting at would get away. This meant we'd have to resort to scraping roadkill off the road,
 					and that would be the only food our family would get to eat for the next 6-7 days. <br>
 					<br>
-					Well, as you might've guessed, roadkill sucks. 
-					It's tough, bland, and there's usually not much of it. When I turned about 3, I flat-out refused to eat it. 
-					Instead, while everyone else was eating, I'd take the rest of the bullets we were rationed for that day, 
+					Well, as you might've guessed, roadkill sucks.
+					It's tough, bland, and there's usually not much of it. When I turned about 3, I flat-out refused to eat it.
+					Instead, while everyone else was eating, I'd take the rest of the bullets we were rationed for that day,
 					and I'd go practice shooting in our 16-acre backyard. Soon I started making every shot when it was my turn,
 					and eating roadkill became a thing we all looked back on and laughed at. I was an even better shot than my three sisters.
 					I was so good, in fact, that I won the golden bullet in the annual Mississippi state-wide Shoot-o-Rama-thon 14 years in a row.
@@ -204,19 +208,19 @@
 					<br>
 					I got bored, because I found my true love when I was around six: software engineering.
 					It all stemmed from the first day I could ever recall meeting
-					my Uncle Clembo. He and Pa were joking around about the days when they were kids, 
+					my Uncle Clembo. He and Pa were joking around about the days when they were kids,
 					and Uncle Clembo got out his old IBM-PC and typed up this short little adventure game in Fortran 77.
-					I can still remember it today: "Dungeon Quest." When I saw that game, it immediately struck me. 
+					I can still remember it today: "Dungeon Quest." When I saw that game, it immediately struck me.
 					Not long after, I asked Uncle Clembo if he would teach me to code too, and, after a little hesitation,
 					he finally agreed. It took me a long four days, but by the end, I had written my own operating system in my very
 					own programming language. <br>
 					<br>
 					Around the age of nine, I started my first business - a little web development firm that grew from just me to
 					over 16,000 employees in the first year. After doing that for a few years, I started my next business. Then another.
-					Pretty soon, I was starting successful businesses every week, and selling them for huge profits. 
+					Pretty soon, I was starting successful businesses every week, and selling them for huge profits.
 					I was so successful, in fact, that I was on the front page of Mississippi's Building Us Tomorrow's Technology (BUTT)
 					magazine. <br>
-					<br> 
+					<br>
 					But one day, I realized I was sick of starting businesses. I wanted to go back to my roots and start building
 					software again. As you might've guessed, Uncle Clembo was proud. The rest of my family, however, didn't understand.
 					They never did, I suppose. Mama always said I ain't never had much sense. <br>
@@ -259,7 +263,7 @@
 					</p>
 					<p>
 						I'm also a huge AI nut majorly curious about machine consciousness.
-						Only when I have amassed my robot army and dominated this puny planet you call "Earth" 
+						Only when I have amassed my robot army and dominated this puny planet you call "Earth"
 						will my lust for power finally be quenched.
 					</p>
 				</div>
@@ -636,7 +640,7 @@ export default {
 	$max-screen-width: 2000;
 	$max-screen-height: 2000;
 
-	@function generateStars($n, $color:'#fff'){ 
+	@function generateStars($n, $color:'#fff'){
 		// Using box-shadows to generate stars - not very performant, but damn it looks good.
 		$stars: '#{random($max-screen-width)}px #{random($max-screen-height)}px #{$color}';
 		@for $i from 1 to $n {
@@ -882,7 +886,7 @@ export default {
 						width: 90%;
 						ul li{
 							margin: 10px 0;
-							
+
 						}
 						&.skills{
 							display: grid;
