@@ -62,7 +62,7 @@ export default {
 		$bottom-ht: 80px;
 		$body-ht: 100vh - calc(#{$header-ht} + #{$bottom-ht});
 
-		grid-template: #{$header-ht} #{$body-ht} #{$bottom-ht} / 1fr;
+		grid-template: #{$header-ht} auto #{$bottom-ht} / auto;
 		.section-header{
 			display: flex;
 			align-items: center;
@@ -71,8 +71,9 @@ export default {
 			height: 100%;
 		}
 		section{
-			min-height: 320px;
 			&.website-cards{
+				display: grid;
+				justify-content: center;
 				.card{
 					position: relative;
 					display: flex;
