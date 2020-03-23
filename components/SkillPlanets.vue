@@ -233,9 +233,10 @@
 			<section class="projects-and-interests">
 				<div class="projects">
 					<h2>Notable Projects</h2>
-					<h3>VirTax - Tax Document Management Webapp</h3>
+					<h3>memento - File Storage/Management Web App</h3>
 					<ul>
 						<li>Created Vue and JavaScript (ES6) front-end</li>
+						<li>Crafted Flask backend and used Google Cloud Storage and Firestore</li>
 						<li>Switchable page language via a pre-translated JSON file</li>
 						<li>Built site-wide upload/download encryption/decryption</li>
 					</ul>
@@ -860,7 +861,7 @@ export default {
 				position: absolute;
 				height: 0;
 				overflow-y: hidden;
-				p{
+				p, li{
 					font-size: 17px;
 					line-height: 1.1;
 					letter-spacing: 0.09px;
@@ -877,8 +878,8 @@ export default {
 					margin: 0 auto;
 					padding: 0 20px;
 					h2{
+						font-size: 2em;
 						color: $green1;
-						// text-shadow:
 						border-bottom: 1px $fuchsia1 solid;
 						width: 100%;
 					}
