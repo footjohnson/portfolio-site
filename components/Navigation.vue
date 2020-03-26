@@ -5,7 +5,7 @@
 			<h2 class="last-name">Medlin</h2>
 			<h3 class="professional-title">
 				<span class="outer" aria-hidden="true">
-					<span class="inner">Software Architect</span>
+					<span class="inner">Software Engineer</span>
 				</span>
 			</h3>
 		</nuxt-link>
