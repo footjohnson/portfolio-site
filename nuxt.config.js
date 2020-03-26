@@ -9,7 +9,10 @@ export default {
 		meta: [
 		{ charset: 'utf-8' },
 		{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
-		{ hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+		{ hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+		{ property: 'og:image', content: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/alien-monster_1f47e.png' },
+		{ property: 'og:image:width', content: '120' },
+		{ property: 'og:image:height', content: '120' }
 		],
 		link: [
 		{ rel: 'icon', type: 'image/x-icon', href: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/alien-monster_1f47e.png' },
